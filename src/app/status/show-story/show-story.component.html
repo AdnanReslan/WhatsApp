@@ -1,0 +1,30 @@
+<body>
+
+<a routerLink="/Status" > <i class="fas fa-arrow-left" style="color: white; margin: 20px;"></i> </a> 
+
+    <img class="private-img " src="{{story[getindex()].imgurl}}" alt="" >
+    <span class="name">{{story[getindex()].name}}</span>
+    <span class="Date-and-time">{{story[getindex()].date}}</span>
+    
+    
+
+      
+
+
+      <div class="dropdown" style="position: absolute; right:30px ; top:0px; " >
+        <button type="button" class="btn " data-bs-toggle="dropdown" style="position: absolute; left: 85%; top:0px; ">
+            <i class="fa fa-ellipsis-v" style="color: white;"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" >Mute</a></li>
+        </ul>
+      </div>
+  <div >
+    <img src="{{story[getindex()].imgstory}}" alt="Cinque Terre" id="image" >
+    <button id="next-btn" (click)="onNext()" class="btn "><i class="fas fa-arrow-right" style="color: white;"></i></button>
+    <button id="per-btn" (click)="onPer()" class="btn "><i class="fas fa-arrow-left" style="color: white;"></i></button>
+</div>
+
+</body>
+    
+  

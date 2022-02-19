@@ -1,0 +1,62 @@
+.private-img{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  border-radius: 50%;
+  width: 40px;
+ 
+}
+
+.name{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+ font-size: small;
+  color: white;
+}
+.Date-and-time{
+  position: absolute;
+  top:35px; 
+  left: 100px;
+  color: white;
+  font-size: small;
+
+}
+#a-phone{
+    color: white;
+    text-decoration: none;
+}
+#span-call{
+  position: absolute;
+  top: 5px;
+  right: 80px;
+}
+#span-vedio{
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  color: white;
+}#input-message{
+  border-radius: 25px;
+   width: 85%;
+   margin: 3px;
+   position: absolute;
+   bottom: 0%;
+   
+
+}
+
+#body{
+  background-image: url('/assets/WhatsApp-Chat-theme-iPhone-stock-744.jpg') !important; 
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-size:cover !important;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+}

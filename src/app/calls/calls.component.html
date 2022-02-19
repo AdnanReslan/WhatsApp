@@ -1,0 +1,19 @@
+<div *ngFor="let i of calls"  class="box-account" >
+    <img class="private-img " src="{{i.imgurl}}" alt="" >
+    <span class="name">{{i.name}}</span>
+    <span class="type"><i class="fas fa-video"></i><i *ngIf="false" class="fas fa-phone-alt"></i></span>
+    <span class="time-of-call">type and time of call</span>
+    
+</div>
+
+
+
+
+<div id="pen-icon-fixed">
+    <div id="pen-icon-absol"><a><i class="fas fa-video" id="pen-icon-i"></i></a></div>
+</div>
+
+<div  id="camera-icon-fixed">
+    <div  id="camera-icon-absol"><a (click)="NewCallHeader()" routerLink="/New call"><i class="fas fa-phone-alt" id="camera-icon-i"></i></a></div>
+     <input type="file" #camera style="display: none;">
+</div>

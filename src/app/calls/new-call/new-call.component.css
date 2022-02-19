@@ -1,0 +1,79 @@
+.selct{
+    color: white;
+    font-weight: 500;
+   position: absolute;
+   top: 7px;
+}
+.contacts{
+    color: white;
+    position: absolute;
+    top: 30px;
+    font-size: small;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+.name{
+    position: absolute;
+    top: 10px;
+    font-weight:  600;
+}
+.status{
+    position: absolute;
+    top:40px;
+  
+}
+.box-account{
+    position: relative;
+   }
+   .private-img{
+    border-radius: 50%;
+    width: 50px;
+    margin: 15px;
+}
+.icon{
+    background-color: #14c73b; 
+    width: 50px; 
+    margin: 10px; 
+    height: 50px; 
+    position: relative;  
+    border-radius: 50%; 
+    
+}
+.center{
+    color: white; 
+    position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+.span-g{
+    position: absolute; 
+    top: 80px; 
+    left: 80px ; 
+    font-weight: 700;
+}
+.span-c{
+    position: absolute; 
+    top: 140px; 
+    left: 80px ; 
+    font-weight: 700;
+}
+.type-call{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: rgb(7 ,94, 84);
+    
+}
+.type-vedio{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(7 ,94, 84);
+    
+}
+#a-phone{
+    text-decoration: none;
+    color: rgb(7 ,94, 84) ;
+}

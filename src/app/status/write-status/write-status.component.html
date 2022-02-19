@@ -1,0 +1,35 @@
+<form [formGroup]="addStoryForm" >
+<textarea [style.backgroundColor]="getcolor()" 
+          [style.fontFamily]="getFont()"  
+          placeholder="Type a status" 
+          id="add-story" 
+          [style.height]="hight"
+          ngModel
+          name="story"
+         minlength="1"
+         formControlName="writeStory">
+</textarea>
+  
+<div *ngIf="this.addStoryForm.get('writeStory')?.valid" id="div-icon-send-fixed" >
+    <div id="div-icon-send-relative">
+        <button class="btn" type="submit" id="button-submit">
+            <i class="fas fa-paper-plane" style="color: white;">
+            </i>
+        </button>
+    </div>
+</div>
+
+</form>
+
+
+<div style="position: relative;">
+   <a (click)="showMainHeader()" routerLink="/Status" > 
+       <i class="fas fa-times" id="close-icon"></i>
+   </a>
+    <i class="far fa-grin" id="smile-icon" ></i>
+    <a  (click)="changeFonts()" id="font-icon" [style.fontFamily]="getFont()">T</a>
+    <i (click)="changeColor()" class="fas fa-palette" id="pallt-icon" ></i>
+</div>
+
+
+

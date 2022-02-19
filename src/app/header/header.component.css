@@ -1,0 +1,26 @@
+.a-nav{
+    color: white;
+    text-decoration: none;
+}
+.fonts{
+    font-family: 'Roboto', sans-serif;
+}
+.active{
+    border-bottom: white 3px solid;
+}
+.div-nav{
+    text-align: center;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+#brand{
+    margin: 5px; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: large ; 
+}
+#div-dropdown{
+    position: absolute; 
+    left: 90%; 
+    top:0px;
+}

@@ -1,0 +1,19 @@
+
+<div *ngFor="let i of chats"  class="box-account" >
+    <a routerLink="/Private chat" id="nav-a" >
+    <img class="private-img " src="{{i.imgurl}}" alt="" >
+    <span class="name">{{i.name}}</span>
+    </a>
+    <span class="time">{{i.date}}</span>
+    <span class="last-message">Last message</span>
+</div>
+
+
+<div id="div-newChat-fixed">
+     <div id="div-newChat-relative">
+         <a (click)="showNewChatHeader()" routerLink="/New chat">
+            <i class="fas fa-comment-medical" id="newChat-icon" ></i>
+        </a>
+    </div>
+</div>
+

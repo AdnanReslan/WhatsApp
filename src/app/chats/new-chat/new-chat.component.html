@@ -1,0 +1,49 @@
+<nav style="background-color: rgb(7 ,94, 84);" *ngIf="!search">
+  <ul class="navbar-nav">
+      <li>
+      <a routerLink="/Chats" (click)="onshowmainHeader()"> <i class="fas fa-arrow-left" style="color: white; margin: 20px;"></i> </a> 
+      <span class="selct">Select contact</span>
+       <span class="contacts">92 contacts</span>
+       <span style="position: absolute; left: 80%; margin: 5px; "><i (click)="onSearch()" class="fas fa-search" style="color: white;"></i></span>
+       <div style="position: absolute; left: 90%; top:0px; " ngbDropdown class="d-inline-block">
+        <button  class="btn " id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-ellipsis-v" style="color: white;"></i></button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Invite a friend</button>
+          <button ngbDropdownItem>Contacts</button>
+          <button ngbDropdownItem>Refresh</button>
+          <button ngbDropdownItem>More for a help info  </button>
+        </div>
+      </div>
+      </li>
+  </ul>  
+</nav>
+
+<div class="container-fluid form-outline " *ngIf="search">
+  <div  class="row" style="margin-top: 5px;" >   
+    <div  class="col-1" style="text-align: center; margin-top: 7px;" >  <a (click)="onbackup()" > <i class="fas fa-arrow-left" style="color: black; "></i> </a>   </div>
+    <div class="col " > <input   type="text"   class="form-control" placeholder="Search..." name="email" /> </div>
+ 
+ 
+  </div>
+</div>
+
+
+  <div class="icon" ><a ><i class="fas fa-user-friends center"></i> </a></div>
+   <span class="span-g" [ngStyle]="currentStyles" >New group</span>
+   <div class="icon" ><a ><i class="fas fa-user-plus center"></i> </a></div>
+   <span class="span-c" [ngStyle]="{top: search ? '130px' : '140px' }" >New contact</span>
+
+
+<div *ngFor="let i of contacts"  class="box-account" >
+  <a id="nav-private" routerLink="/Private chat">
+     <img class="private-img " src="{{i.imgurl}}" alt="" >
+     <span class="name">{{i.name}}</span>
+  </a>
+  <span class="status">status</span>
+  
+</div>
+
+
+
+
+

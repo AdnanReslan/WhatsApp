@@ -1,0 +1,46 @@
+<div   class="box-account" >
+    <img class="private-img " src="assets/self.jpg" alt="" >
+    <div  id="plus-icon-fixed">
+        <div (click)="addstatus.click()"  id="plus-icon-absol"><a><i class="fas fa-plus" id="plus-icon-i"></i></a></div>
+        <input type="file" #addstatus style="display: none;">
+    </div>
+    <span class="my-status">My status</span>
+    <span class="Date-and-time">Tap to add status update</span>
+    
+</div>
+<div class="br-div" *ngIf="unViewedStory.length>0" > Unviewed updates</div>
+<div *ngIf="unViewedStory.length>0" >
+<div  *ngFor="let i of unViewedStory"    class="box-account" >
+    <a id="decor" routerLink='/Show story'>  
+        <img class="private-img " src="{{i.imgurl}}" alt="" >
+        <span class="name">{{i.name}}</span> 
+    </a>
+
+    <span class="Date-and-time">Date and time </span>
+</div>
+</div>
+
+
+
+<div class="br-div" *ngIf="viewedStory.length>0"> Viewed updates</div>
+<div *ngIf="viewedStory.length>0">
+<div  *ngFor="let i of viewedStory"  class="box-account" >
+     <a routerLink='/Show story'></a>
+    <img class="private-img " src="assets/self.jpg" alt="" >
+    <span class="name">Adnan Reslan</span>
+  
+    <span class="Date-and-time">Date and time </span>
+    
+</div>
+</div>
+
+<div id="pen-icon-fixed">
+    <div id="pen-icon-absol"><a (click)="hideAllNav()"routerLink="/Write story"><i class="fas fa-pen " id="pen-icon-i"></i></a></div>
+</div>
+
+<div  id="camera-icon-fixed">
+    <div (click)="camera.click()" id="camera-icon-absol"><a ><i class="fas fa-camera" id="camera-icon-i"></i></a></div>
+     <input type="file" #camera style="display: none;">
+</div>
+
+

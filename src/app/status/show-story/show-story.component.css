@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    height:700px;
+}
+ 
+  
+   #image { 
+    width: 290px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .private-img{
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    border-radius: 50%;
+    width: 40px;
+   
+}
+
+.name{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+   font-size: small;
+    color: white;
+}
+.Date-and-time{
+    position: absolute;
+    top:35px; 
+    left: 100px;
+    color: white;
+    font-size: small;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+#next-btn{
+    position: absolute;
+    top: 50%;
+    right:0%;
+    transform: translate(0%,-50%);
+}
+.contin{
+    position: relative;
+}
+#per-btn{
+    position: absolute;
+    top: 50%;
+    left:0%;
+    transform: translate(0%,-50%);
+}
+

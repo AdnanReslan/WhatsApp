@@ -1,0 +1,91 @@
+#add-story{
+   width: 100%;
+   text-align: center;  
+   text-transform:translate(-50%, -50%);
+  
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+   font-size: x-large;
+   position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+   font-size: x-large;
+   position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center; 
+   font-size: x-large; 
+   position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+   font-size: x-large;
+   position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+#div-icon-send-fixed{
+   position: fixed; 
+   bottom:0%; 
+   right: 3%;
+}
+#div-icon-send-relative{
+   background-color: rgb(8, 107, 74); 
+   width: 50px; 
+   margin: 10px; 
+   height: 50px;
+   position: relative;  
+   border-radius: 50%;
+}
+#button-submit{
+   position: absolute; 
+   top: 50% ;
+   left: 50%; 
+   transform: translate(-50%, -50%);
+}
+#close-icon{
+   position: fixed; 
+   top: 1%; 
+   right: 2%;  
+   margin: 10px; 
+   color: white;
+}
+#smile-icon{
+   position: fixed; 
+   bottom: 3%;  
+   margin: 10px; 
+   color: white;
+}
+#font-icon{
+   position: fixed; 
+   bottom: 1%; 
+   left: 10%;  
+   margin: 10px;
+   color: white;
+   font-weight: 600;
+   font-size: x-large;
+}
+#pallt-icon{
+   position: fixed; 
+   bottom: 3%; 
+   margin: 10px; 
+   left: 20%; 
+   color: white;
+}

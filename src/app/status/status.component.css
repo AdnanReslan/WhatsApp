@@ -1,0 +1,106 @@
+.private-img{
+    border-radius: 50%;
+    width: 50px;
+    margin: 15px;
+}
+
+.box-account{
+ position: relative;
+}
+.name{
+    position: absolute;
+    top: 10px;
+    font-weight:  600;
+}
+.Date-and-time{
+    position: absolute;
+    top:40px;
+  
+}
+
+.br-div{
+    background-color: whitesmoke;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(59, 58, 58);
+}
+.my-status{
+    position: absolute;
+    top: 10px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+#pen-icon-fixed{
+    position: fixed; 
+    bottom:12%; 
+    right: 5%;
+    
+}
+#pen-icon-absol{
+    background-color: rgb(206, 200, 200); 
+    margin: 10px; 
+    height: 50px; 
+    position: relative; 
+    border-radius: 50%;  
+    width: 40px; 
+    height: 40px;
+}
+#pen-icon-i{
+    color: black; 
+    position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+#camera-icon-fixed{
+    position: fixed;
+    bottom:0%; 
+    right: 3%;
+  
+}
+#camera-icon-absol{
+    background-color: #14c73b; 
+    width: 50px; 
+    margin: 10px; 
+    height: 50px; 
+    position: relative;  
+    border-radius: 50%;
+}
+
+#camera-icon-i{
+    color: white; 
+    position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+#plus-icon-fixed{
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    
+}
+#plus-icon-absol{
+    background-color: #14c73b;
+    margin: 10px; 
+    width: 20px; 
+    height:20px; 
+    position: relative;  
+    border-radius: 50%;
+    border: white 2px solid;
+}
+#plus-icon-i{
+    color: white; 
+    position: absolute; 
+    top: 50% ; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    font-size: small;
+    font-weight: 600;
+}
+#decor{
+    color: black;
+    text-decoration:none;
+}
+
